@@ -22,8 +22,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--mainBlack);
-  /* background: var(--mainWhite); */
-  background: red;
+  background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
 }
