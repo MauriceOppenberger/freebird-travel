@@ -19,6 +19,11 @@
 .day p {
   line-height: 2;
   transition: var(--mainTransition);
+  max-height: 0px;
+  overflow: hidden;
+}
+.show-info {
+  max-height: 250px !important;
 }
 @media screen and (min-width: 992px) {
   .day h4 {

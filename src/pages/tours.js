@@ -1,15 +1,15 @@
 import React, { Component } from "react"
 import Layout from "../components/Layout"
-import Header from "../examples/RegularHeader"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import Tours from "../components/Tours/Tours"
 
 export default class tour extends Component {
   render() {
     return (
       <Layout>
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
-        <Header />
+        <Tours />
       </Layout>
     )
   }

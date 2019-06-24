@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"

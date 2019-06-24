@@ -8,10 +8,6 @@ const getSiteData = graphql`
         title
         description
         author
-        data {
-          name
-          age
-        }
       }
     }
   }
@@ -21,12 +17,7 @@ const RegularHeader = () => {
     <StaticQuery
       query={getSiteData}
       render={data => {
-        return (
-          <div>
-            <h1>title: {data.site.siteMetadata.title}</h1>
-            <h4>title: {data.site.siteMetadata.author}</h4>
-          </div>
-        )
+        return <div></div>
       }}
     />
   )

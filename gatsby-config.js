@@ -13,10 +13,9 @@ module.exports = {
     description:
       "Custom travel consultant and trip planner. Stop streesing about planning and start traveling",
     author: "@mauriceoppenberger",
-    data: {
-      name: "Maurice",
-      age: "30",
-    },
+    TwitterUsername: "@john_Doe",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://gatsby-training-first.netlify.com",
   },
   plugins: [
     {
@@ -38,5 +37,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
