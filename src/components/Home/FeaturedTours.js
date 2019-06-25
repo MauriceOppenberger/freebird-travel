@@ -14,7 +14,6 @@ const getTours = graphql`
       edges {
         node {
           name
-          price
           slug
           country
           contentful_id
