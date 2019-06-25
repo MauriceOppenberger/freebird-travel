@@ -7,18 +7,18 @@ import styles from "../css/blog.module.css"
 import Title from "../components/Title"
 import SEO from "../components/SEO"
 
-const Blog = props => {
+const Post = props => {
   const { data } = props
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
 
-  const nextPage = `/blogs/${currentPage + 1}`
+  const nextPage = `/posts/${currentPage + 1}`
   const prevPage =
-    currentPage - 1 === 1 ? `/blogs/` : `/blogs/${currentPage - 1}`
+    currentPage - 1 === 1 ? `/posts/` : `/posts/${currentPage - 1}`
   return (
     <Layout>
-      <SEO title="Blogs" />
+      <SEO title="Posts" />
       <section className={styles.blog}>
         <Title title="latest" subtitle="posts" />
         <div className={styles.center}>
@@ -38,7 +38,7 @@ const Blog = props => {
               <AniLink
                 key={i}
                 fade
-                to={`/blogs/${i === 0 ? "" : i + 1}`}
+                to={`/posts/${i === 0 ? "" : i + 1}`}
                 className={
                   i + 1 === currentPage
                     ? `${styles.link} ${styles.active}`
@@ -84,4 +84,4 @@ export const query = graphql`
   }
 `
 
-export default Blog
+export default Post

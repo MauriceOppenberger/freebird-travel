@@ -17,9 +17,7 @@ const Blog = ({ data }) => {
       "embedded-asset-block": node => {
         return (
           <div className>
-            <h3>this is great image</h3>
             <img width="400" src={node.data.target.fields.file["en-US"].url} />
-            <p>images is there</p>
           </div>
         )
       },
@@ -31,7 +29,7 @@ const Blog = ({ data }) => {
             <br />
             <br />
             <br />
-            <h1>this is another post: {title["en-US"]}</h1>
+            <h1>next post: {title["en-US"]}</h1>
             <img width="400" src={image["en-US"].fields.file["en-US"].url} />
             {documentToReactComponents(text["en-US"])}
           </div>
