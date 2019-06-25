@@ -14,16 +14,15 @@ export default ({ data }) => (
     <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
-        title="make room for more"
-        info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, architecto!"
+        title="Explore remote places"
+        info="Exploring places not many have seen before is the best part of Traveling is"
       >
         <AniLink fade to="/tours" className="btn-white">
-          explore more
+          start here
         </AniLink>
       </Banner>
     </StyledHero>
     <About />
-    <Services />
     <FeaturedTours />
   </Layout>
 )

@@ -3,10 +3,12 @@ import Layout from "../components/Layout"
 import styles from "../css/notfound.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Banner from "../components/Banner"
+import SEO from "../components/SEO"
 
 export default function notfound() {
   return (
     <Layout>
+      <SEO title="Error" />
       <header className={styles.notfound}>
         <Banner title="oops is's a dead end">
           <AniLink fade to="/" className="btn-white">

@@ -7,7 +7,10 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getTours = graphql`
   query {
-    featuredTours: allContentfulTour(filter: { featured: { eq: true } }) {
+    featuredTours: allContentfulTour(
+      limit: 3
+      filter: { featured: { eq: true } }
+    ) {
       edges {
         node {
           name
@@ -32,7 +35,7 @@ const FeaturedTours = () => {
 
   return (
     <section className={styles.tours}>
-      <Title title="featured" subtitle="tours" />
+      <Title title="Featured" subtitle="Experiences" />
       <div className={styles.center}>
         {tours.map(({ node }) => {
           return <Tour key={node.contentful_id} tour={node} />
